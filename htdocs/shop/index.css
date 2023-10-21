@@ -1,0 +1,133 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+table,
+tr,
+td,
+th {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 5px -3px;
+  flex: 0 0 auto;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.body-container {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 100%;
+  background-color: rgba(174, 183, 194, 0.12);
+  padding: 16px 24px;
+  padding-right: 40px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+.sidebar-subitem {
+  color: #3d3d3d;
+  text-decoration: none;
+  padding-left: 56px;
+}
+
+.sidebar-item img {
+  width: 30px;
+  height: 30px;
+}
+
+.body-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 24px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 16px 24px;
+}
+
+.table-container {
+  padding: 16px;
+  width: 100%;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.table-container table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(234, 232, 228);
+  padding: 16px 24px;
+  flex: 0 0 auto;
+}
