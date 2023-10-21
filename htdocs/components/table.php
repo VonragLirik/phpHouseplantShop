@@ -3,6 +3,7 @@
     <table>
       <thead>
         <tr>
+          <th>Изображение</th>
           <th>Название товара</th>
           <th>Основные характеристики товара</th>
           <th>Цена</th>
@@ -19,8 +20,19 @@
           require 'C:\MAMP\htdocs\backend\blooming_products.php';
         }
         ?>
-        <?php ?>
       </tbody>
+
+      <script>
+        const rows = document.querySelectorAll('.clickable-row');
+        rows.forEach(row => {
+          row.addEventListener('click', function () {
+            const href = row.getAttribute('data-href');
+            if (href) {
+              window.location.href = href;
+            }
+          });
+        });
+      </script>
     </table>
   </div>
 </div>
