@@ -1,7 +1,7 @@
 <?php
     include("db.php");
    
-    $query = "SELECT * FROM products where category = 'blooming'";
+    $query = "SELECT * FROM products where category = 'succulents'";
     $result = mysqli_query($connection, $query);
 
     if (!$result) {
@@ -15,5 +15,4 @@
         echo "<td>Цена: " . $row['price'] . " руб." . "</td>";
         echo "</tr>";
     }
-
 ?>
