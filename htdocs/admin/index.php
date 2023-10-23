@@ -10,13 +10,18 @@
     <?php
     session_start();
 
-    if (isset($_SESSION['first_name'])) {
-      echo "<h2>Добро пожаловать, " . $_SESSION['first_name'] . "!</h2>";
-      echo "<a href='../logout'>Выйти</a>";
-    } else {
+    if (!isset($_SESSION['first_name'])) {
       header("Location: ../index.php");
     }
     ?>
+
+    <div class="login-container">
+      <?php
+      require 'C:\MAMP\htdocs\components\admin_table.php';
+      ?>
+
+      <input type="submit" value="Сохранить" class="login-button">
+    </div>
   </section>
 
   <?php require 'C:\MAMP\htdocs\components\footer.phtml'; ?>

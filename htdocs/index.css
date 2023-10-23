@@ -52,10 +52,16 @@ th {
 
 .header-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 16px 24px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 5px -3px;
   flex: 0 0 auto;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -120,6 +126,7 @@ th {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
+  word-wrap: break-word;
 }
 
 .table-img {
@@ -178,7 +185,7 @@ th {
 .login-button {
   border-radius: 10px;
   background-color: white;
-  width: 80px;
+  width: 100px;
 }
 
 .login-button:hover {
@@ -188,4 +195,9 @@ th {
 
 .login-error-text {
   color: red;
+}
+
+.trash-image {
+  width: 15px;
+  cursor: pointer;
 }

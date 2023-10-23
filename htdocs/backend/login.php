@@ -2,8 +2,6 @@
 session_start();
 include("db.php");
 
-echo $_GET['login'] . ' ' . $_GET['password'] . isset($_GET['login']) . isset($_GET['password']);
-
 if (isset($_GET['login']) && isset($_GET['password'])) {
     $login = $_GET['login'];
     $password = $_GET['password'];
