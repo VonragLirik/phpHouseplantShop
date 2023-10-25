@@ -8,7 +8,7 @@
     <?php include 'C:\MAMP\htdocs\components\sidebar.phtml' ?>
 
     <div class="body-content-container">
-      <form action="../backend/login.php" method="get">
+      <form action="../backend/login.php" method="post">
         <div class="login-container">
           <h1>Авторизация</h1>
 

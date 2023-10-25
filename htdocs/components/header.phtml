@@ -3,5 +3,10 @@
     <img src="/images/logo.png" class="header-logo" />Магазин комнатных растений
   </div>
 
-  <a href='../logout'>Выйти</a>
+  <?php session_start();
+  if (isset($_SESSION['first_name'])): ?>
+    <a href='../logout'>Выйти</a>
+  <?php else: ?>
+    <a href='../login'>Войти</a>
+  <?php endif; ?>
 </section>

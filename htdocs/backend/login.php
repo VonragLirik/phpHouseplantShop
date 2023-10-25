@@ -2,9 +2,9 @@
 session_start();
 include("db.php");
 
-if (isset($_GET['login']) && isset($_GET['password'])) {
-    $login = $_GET['login'];
-    $password = $_GET['password'];
+if (isset($_POST['login']) && isset($_POST['password'])) {
+    $login = $_POST['login'];
+    $password = $_POST['password'];
 
     $query = "SELECT * FROM users WHERE login = '$login' AND password = '$password'";
     $result = mysqli_query($connection, $query);
