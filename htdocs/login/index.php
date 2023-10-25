@@ -12,9 +12,10 @@
         <div class="login-container">
           <h1>Авторизация</h1>
 
-
           <?php
-          echo "<h3 class='login-error-text'>" . $_GET['error'] . "</h3>";
+          if ($_GET['error']) {
+            echo "<h3 class='login-error-text'>" . $_GET['error'] . "</h3>";
+          }
           ?>
 
           <div class="login-input-container">
