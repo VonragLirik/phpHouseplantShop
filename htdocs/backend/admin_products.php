@@ -17,7 +17,6 @@ while ($row = mysqli_fetch_assoc($result)) {
     echo "<td>
     <img src='../images/trash.png' class='trash-image' type='text' id='" . $row['id'] . "' ></img>
     <a href='./update?id=" . $row['id'] . "'><img src='../images/edit.png' class='edit-image' type='text'></img></a>
-    <a href='./create'><img src='../images/plus.png' class='edit-image' type='text'></img></a>
     </td>";
     echo "</tr>";
 }

@@ -27,34 +27,27 @@ if (!isset($_SESSION['first_name'])) {
           ?>
 
           <div class="login-input-container">
-            <label for="login">Ссылка на картинку</label>
+            <label for="src">Ссылка на картинку</label>
             <input required type="text" class="login-input" placeholder="Введите ссылку на картинку" name="src"
               value='/images/empty-image.png' />
           </div>
 
           <div class="login-input-container">
-            <label for="login">Имя</label>
+            <label for="name">Имя</label>
             <input required type="text" class="login-input" placeholder="Введите имя" name="name" />
           </div>
 
           <div class="login-input-container">
-            <label for="login">Описание</label>
+            <label for="description">Описание</label>
             <input required type="text" class="login-input" placeholder="Введите описание" name="description" />
           </div>
 
           <div class="login-input-container">
-            <label for="login">Цена</label>
+            <label for="price">Цена</label>
             <input required type="text" class="login-input" placeholder="Введите цену" name="price" />
           </div>
 
-          <div class="login-input-container">
-            <label for="login">Категория</label>
-            <select name="category" placeholder="Выберите категорию">
-              <option value="blooming">Цветущие</option>
-              <option value="trees">Деревья</option>
-              <option value="succulents">Суккуленты</option>
-            </select>
-          </div>
+          <?php include 'C:\MAMP\htdocs\components\category_selector.php' ?>
 
           <input type="submit" value="Сохранить" class="login-button">
         </div>

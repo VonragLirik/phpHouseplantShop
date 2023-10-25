@@ -7,9 +7,10 @@ $src = $_POST['src'];
 $name = $_POST['name'];
 $description = $_POST['description'];
 $price = $_POST['price'];
+$category = $_POST['category'];
 
-if (isset($id) && isset($src) && isset($name) && isset($description) && isset($price)) {
-    $query = "UPDATE products SET name = '$name', src = '$src', description = '$description', price = '$price' WHERE id = $id";
+if (isset($id) && isset($src) && isset($name) && isset($description) && isset($price) && isset($category)) {
+    $query = "UPDATE products SET name = '$name', src = '$src', description = '$description', price = '$price', category = '$category' WHERE id = $id";
     $result = mysqli_query($connection, $query);
 
     if (!$result) {

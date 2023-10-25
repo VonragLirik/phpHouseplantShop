@@ -42,28 +42,31 @@ $product = mysqli_fetch_assoc($result);
           ?>
 
           <div class="login-input-container">
-            <label for="login">Ссылка на картинку</label>
+            <label for="src">Ссылка на картинку</label>
             <input required type="text" class="login-input" placeholder="Введите ссылку на картинку" name="src"
               value='<?= $product['src'] ?? '/images/empty-image.png' ?>' />
           </div>
 
           <div class="login-input-container">
-            <label for="login">Имя</label>
+            <label for="name">Имя</label>
             <input required type="text" class="login-input" placeholder="Введите имя" name="name"
               value='<?= $product['name'] ?>' />
           </div>
 
           <div class="login-input-container">
-            <label for="login">Описание</label>
+            <label for="description">Описание</label>
             <input required type="text" class="login-input" placeholder="Введите описание" name="description"
               value='<?= $product['description'] ?>' />
           </div>
 
           <div class="login-input-container">
-            <label for="login">Цена</label>
+            <label for="price">Цена</label>
             <input required type="text" class="login-input" placeholder="Введите цену" name="price"
               value='<?= $product['price'] ?>' />
           </div>
+
+          <?php $value = $product['category'];
+          include 'C:\MAMP\htdocs\components\category_selector.php' ?>
 
           <input type="submit" value="Сохранить" class="login-button">
         </div>

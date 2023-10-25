@@ -185,7 +185,9 @@ th {
 .login-button {
   border-radius: 10px;
   background-color: white;
-  width: 100px;
+  width: fit-content;
+  padding: 4px 8px;
+  color: black;
 }
 
 .login-button:hover {

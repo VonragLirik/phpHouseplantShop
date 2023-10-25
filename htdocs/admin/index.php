@@ -16,6 +16,11 @@
     ?>
 
     <div class="login-container">
+      <a href='./create'>
+        <button class="login-button">
+          Добавить продукт
+        </button>
+      </a>
       <?php
       require 'C:\MAMP\htdocs\components\admin_table.php';
       ?>
