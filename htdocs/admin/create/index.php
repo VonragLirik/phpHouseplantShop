@@ -26,30 +26,30 @@ if (!isset($_SESSION['first_name'])) {
           }
           ?>
 
-          <div class="login-input-container">
+          <div class="basic-input-container">
             <label for="src">Ссылка на картинку</label>
-            <input required type="text" class="login-input" placeholder="Введите ссылку на картинку" name="src"
+            <input required type="text" class="basic-input" placeholder="Введите ссылку на картинку" name="src"
               value='/images/empty-image.png' />
           </div>
 
-          <div class="login-input-container">
+          <div class="basic-input-container">
             <label for="name">Имя</label>
-            <input required type="text" class="login-input" placeholder="Введите имя" name="name" />
+            <input required type="text" class="basic-input" placeholder="Введите имя" name="name" />
           </div>
 
-          <div class="login-input-container">
+          <div class="basic-input-container">
             <label for="description">Описание</label>
-            <input required type="text" class="login-input" placeholder="Введите описание" name="description" />
+            <input required type="text" class="basic-input" placeholder="Введите описание" name="description" />
           </div>
 
-          <div class="login-input-container">
+          <div class="basic-input-container">
             <label for="price">Цена</label>
-            <input required type="text" class="login-input" placeholder="Введите цену" name="price" />
+            <input required type="text" class="basic-input" placeholder="Введите цену" name="price" />
           </div>
 
           <?php include 'C:\MAMP\htdocs\components\category_selector.php' ?>
 
-          <input type="submit" value="Сохранить" class="login-button">
+          <input type="submit" value="Сохранить" class="basic-button">
         </div>
       </form>
     </div>

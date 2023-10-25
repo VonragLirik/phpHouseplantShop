@@ -17,7 +17,7 @@
 
     <div class="login-container">
       <a href='./create'>
-        <button class="login-button">
+        <button class="basic-button">
           Добавить продукт
         </button>
       </a>
@@ -25,7 +25,7 @@
       require 'C:\MAMP\htdocs\components\admin_table.php';
       ?>
 
-      <input type="submit" value="Сохранить" class="login-button">
+      <input type="submit" value="Сохранить" class="basic-button">
     </div>
   </section>
 

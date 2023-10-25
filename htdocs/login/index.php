@@ -18,19 +18,19 @@
           }
           ?>
 
-          <div class="login-input-container">
+          <div class="basic-input-container">
             <label for="login">Логин</label>
-            <input required type="text" class="login-input" placeholder="Введите логин" id="login" name="login" />
+            <input required type="text" class="basic-input" placeholder="Введите логин" id="login" name="login" />
           </div>
 
-          <div class="login-input-container">
+          <div class="basic-input-container">
             <label for="password">Пароль</label>
-            <input required type="password" class="login-input" placeholder="Введите пароль" id="password"
+            <input required type="password" class="basic-input" placeholder="Введите пароль" id="password"
               name="password" />
           </div>
 
 
-          <input type="submit" value="Войти" class="login-button">
+          <input type="submit" value="Войти" class="basic-button">
         </div>
       </form>
     </div>

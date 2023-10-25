@@ -166,23 +166,23 @@ th {
   gap: 16px;
 }
 
-.login-input-container {
+.basic-input-container {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.login-input {
+.basic-input {
   width: 40vw;
   border-radius: 10px;
   height: 32px;
 }
 
-.login-input::placeholder {
+.basic-input::placeholder {
   padding-left: 8px;
 }
 
-.login-button {
+.basic-button {
   border-radius: 10px;
   background-color: white;
   width: fit-content;
@@ -190,7 +190,7 @@ th {
   color: black;
 }
 
-.login-button:hover {
+.basic-button:hover {
   cursor: pointer;
   background-color: rgb(217, 196, 196);
 }
