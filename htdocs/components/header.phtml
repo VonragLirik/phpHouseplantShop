@@ -1,14 +1,17 @@
 <section class="header-container">
-  <div class="header-left">
-    <img src="/images/logo.png" class="header-logo" />Магазин комнатных растений
-  </div>
+  <a href='/'>
+    <div class="header-left">
+      <img src="/images/logo.png" class="header-logo" />
+      <p class="header-title">Магазин комнатных растений</p>
+    </div>
+  </a>
 
   <button class="basic-button">
     <?php session_start();
     if (isset($_SESSION['first_name'])): ?>
       <a href='/logout'>Выйти</a>
     <?php else: ?>
-      <a href='/login'>Войти</a>
+      <a href='/login'>Личный кабинет</a>
     <?php endif; ?>
   </button>
 </section>

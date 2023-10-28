@@ -58,19 +58,25 @@ th {
   justify-content: space-between;
   align-items: center;
   padding: 16px 24px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 5px -3px;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
   flex: 0 0 auto;
 }
 
 .header-left {
   display: flex;
   align-items: center;
+  color: black;
 }
 
 .header-logo {
   width: 40px;
   height: 40px;
   margin-right: 8px;
+}
+
+.header-title {
+  color: #155b0a;
+  font-weight: 700;
 }
 
 .body-container {
@@ -82,7 +88,7 @@ th {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: rgba(174, 183, 194, 0.12);
+  background-color: #e7f5ed;
   padding: 16px 24px;
 }
 
@@ -99,6 +105,11 @@ th {
   color: #3d3d3d;
   text-decoration: none;
   padding-left: 56px;
+}
+
+.sidebar-item:hover,
+.sidebar-subitem:hover {
+  color: #f63;
 }
 
 .sidebar-item-img {
@@ -151,7 +162,7 @@ th {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(234, 232, 228);
+  background-color: #cde5cb;
   padding: 16px 24px;
   flex: 0 0 auto;
 }
@@ -193,13 +204,19 @@ th {
   border-radius: 10px;
   background-color: white;
   width: fit-content;
-  padding: 4px 8px;
-  color: black;
+  padding: 8px;
+  color: white;
+  background: #22c05b;
+  border: 1px solid #22c05b;
+}
+
+.basic-button a {
+  color: white;
 }
 
 .basic-button:hover {
   cursor: pointer;
-  background-color: rgb(217, 196, 196);
+  background: #5a863b;
 }
 
 .login-error-text {
