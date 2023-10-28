@@ -121,6 +121,9 @@ th {
   display: flex;
   flex-wrap: wrap;
   padding: 16px 24px;
+  opacity: 0;
+  transform: translateY(-20px); /* Начальное положение до анимации */
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 .basic-body-container {
@@ -240,4 +243,15 @@ th {
 .sidebar-item-container {
   display: flex;
   gap: 8px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
