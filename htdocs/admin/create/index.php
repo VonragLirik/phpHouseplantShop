@@ -44,7 +44,7 @@ if (!isset($_SESSION['first_name'])) {
 
           <div class="basic-input-container">
             <label for="price">Цена</label>
-            <input required type="text" class="basic-input" placeholder="Введите цену" name="price" />
+            <input required type="number" class="basic-input" placeholder="Введите цену" name="price" min="1" />
           </div>
 
           <?php include 'C:\MAMP\htdocs\components\category_selector.php' ?>

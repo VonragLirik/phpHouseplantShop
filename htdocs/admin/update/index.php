@@ -61,7 +61,7 @@ $product = mysqli_fetch_assoc($result);
 
           <div class="basic-input-container">
             <label for="price">Цена</label>
-            <input required type="text" class="basic-input" placeholder="Введите цену" name="price"
+            <input required type="number" class="basic-input" placeholder="Введите цену" name="price" min="1"
               value='<?= $product['price'] ?>' />
           </div>
 
