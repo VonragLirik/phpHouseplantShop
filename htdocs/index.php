@@ -9,10 +9,13 @@
 
     <div class="body-content-container">
       <div class="basic-body-container">
-        <h1>Магазин комнатных растений</h1>
-        <h2>Адрес - г. Ростов-на-Дону, ул. сказочников, д. 2</h2>
+        <?php
+        $type = 'main_page';
+        require '.\backend\get_dinamic_content.php';
+        ?>
       </div>
     </div>
+    </script>
   </section>
 
   <?php require 'C:\MAMP\htdocs\components\footer.phtml'; ?>

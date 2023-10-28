@@ -115,6 +115,13 @@ th {
   padding: 16px 24px;
 }
 
+.edit-body-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px;
+  gap: 16px;
+}
+
 .table-container {
   padding: 16px;
   width: 100%;
@@ -207,4 +214,8 @@ th {
 .edit-image {
   width: 15px;
   cursor: pointer;
+}
+
+.hidden-container {
+  display: none;
 }
