@@ -9,10 +9,10 @@
 
     <div class="body-content-container">
       <div class="basic-body-container">
-        <h1>Название компании - магазин комнатных растений</h1>
-        <h2>Контакты - Гарнов Кирилл</h2>
-        <h2>Телефон - 8-800-555-35-35</h2>
-        <h2>Адрес - г. Ростов-на-Дону, ул. сказочников, д. 2</h2>
+        <?php
+        $type = 'about_company_page';
+        require '..\backend\get_dinamic_content.php';
+        ?>
       </div>
     </div>
   </section>

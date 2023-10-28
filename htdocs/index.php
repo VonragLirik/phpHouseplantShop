@@ -15,7 +15,6 @@
         ?>
       </div>
     </div>
-    </script>
   </section>
 
   <?php require 'C:\MAMP\htdocs\components\footer.phtml'; ?>

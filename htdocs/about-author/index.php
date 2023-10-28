@@ -9,13 +9,10 @@
 
     <div class="body-content-container">
       <div class="basic-body-container">
-        <h1>Автор сайта - Гарнов Кирилл</h1>
-        <h2>
-          Email -
-          <a href="mailto:kirill-garnov@mail.ru" target="_blank">
-            <span>kirill-garnov@mail.ru</span>
-          </a>
-        </h2>
+        <?php
+        $type = 'about_author_page';
+        require '..\backend\get_dinamic_content.php';
+        ?>
       </div>
     </div>
   </section>
