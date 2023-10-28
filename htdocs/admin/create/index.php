@@ -17,8 +17,8 @@ if (!isset($_SESSION['first_name'])) {
 
     <div class="body-content-container">
       <form action="..\..\backend\create_product.php" method="post">
-        <div class="login-container">
-          <h1>Создание продукта</h1>
+        <div class="container-with-gap">
+          <h2>Создание продукта</h2>
 
           <?php
           if ($_GET['error']) {

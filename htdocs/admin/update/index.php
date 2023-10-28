@@ -11,9 +11,6 @@ if (!isset($_SESSION['first_name'])) {
 
 include("C:\MAMP\htdocs\backend\db.php");
 
-// error_reporting(E_ALL);
-// ini_set('display_errors', 1);
-
 $id = $_GET['id'];
 $query = "SELECT * FROM products where id = $id";
 $result = mysqli_query($connection, $query);
@@ -32,8 +29,8 @@ $product = mysqli_fetch_assoc($result);
 
     <div class="body-content-container">
       <form action="..\..\backend\save_product.php?id=<?= $id ?>" method="post">
-        <div class="login-container">
-          <h1>Обновление продукта</h1>
+        <div class="container-with-gap">
+          <h2>Обновление продукта</h2>
 
           <?php
           if ($_GET['error']) {

@@ -15,12 +15,13 @@
     }
     ?>
 
-    <div class="login-container">
+    <div class="container-with-gap">
       <a href='./create'>
         <button class="basic-button">
           Добавить продукт
         </button>
       </a>
+
       <?php
       require 'C:\MAMP\htdocs\components\admin_table.php';
       ?>

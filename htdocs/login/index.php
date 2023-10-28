@@ -9,7 +9,7 @@
 
     <div class="body-content-container">
       <form action="../backend/login.php" method="post">
-        <div class="login-container">
+        <div class="container-with-gap">
           <h1>Авторизация</h1>
 
           <?php

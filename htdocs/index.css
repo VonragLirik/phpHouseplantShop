@@ -167,13 +167,13 @@ th {
   height: 300px;
 }
 
-.login-container {
+.container-with-gap {
   width: 75vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px 24px;
   gap: 16px;
+  padding-top: 24px;
 }
 
 .basic-input-container {
