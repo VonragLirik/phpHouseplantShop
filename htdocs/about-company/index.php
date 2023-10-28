@@ -8,7 +8,7 @@
     <?php include 'C:\MAMP\htdocs\components\sidebar.phtml' ?>
 
     <div class="body-content-container">
-      <div class="about-container">
+      <div class="basic-body-container">
         <h1>Название компании - магазин комнатных растений</h1>
         <h2>Контакты - Гарнов Кирилл</h2>
         <h2>Телефон - 8-800-555-35-35</h2>

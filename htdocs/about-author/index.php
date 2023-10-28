@@ -8,7 +8,7 @@
     <?php include 'C:\MAMP\htdocs\components\sidebar.phtml' ?>
 
     <div class="body-content-container">
-      <div class="about-container">
+      <div class="basic-body-container">
         <h1>Автор сайта - Гарнов Кирилл</h1>
         <h2>
           Email -

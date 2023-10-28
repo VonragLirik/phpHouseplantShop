@@ -109,7 +109,7 @@ th {
   padding: 16px 24px;
 }
 
-.about-container {
+.basic-body-container {
   display: flex;
   flex-direction: column;
   padding: 16px 24px;

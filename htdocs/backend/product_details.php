@@ -10,7 +10,7 @@ if (!$result) {
 
 while ($row = mysqli_fetch_assoc($result)) {
     echo "<img src='" . ($row['src'] ?? '/images/empty-image.png') . "' class='details-img' />";
-    echo "<div class='about-container'>";
+    echo "<div class='basic-body-container'>";
     echo "<h1>" . $row["name"] . "</h1>";
     echo "<h3>" . $row["description"] . "</h3>";
     echo "<h2>" . $row["price"] . " руб.</h2>";
