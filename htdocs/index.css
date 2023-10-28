@@ -98,7 +98,7 @@ th {
   padding-left: 56px;
 }
 
-.sidebar-item img {
+.sidebar-item-img {
   width: 30px;
   height: 30px;
 }
@@ -218,4 +218,9 @@ th {
 
 .hidden-container {
   display: none;
+}
+
+.sidebar-item-container {
+  display: flex;
+  gap: 8px;
 }

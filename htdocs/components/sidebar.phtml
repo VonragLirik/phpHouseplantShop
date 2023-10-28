@@ -1,8 +1,16 @@
 <div class="sidebar-container">
-  <a href="/" class="sidebar-item">
-    <img src="/images/sidebar-logo.png" />
-    <p>Главная страница</p>
-  </a>
+  <div class="sidebar-item-container">
+    <a href="/" class="sidebar-item">
+      <img class="sidebar-item-img" src="/images/sidebar-logo.png" />
+      <p>Главная страница</p>
+    </a>
+
+    <?php
+    if (isset($_SESSION['first_name'])) {
+      echo "<a href='/admin/main-page' class='sidebar-item'><img src='/images/edit.png' class='edit-image' type='text'></img></a>";
+    }
+    ?>
+  </div>
   <a href="/blooming" class="sidebar-subitem">
     <p>Цветущие</p>
   </a>
@@ -12,12 +20,29 @@
   <a href="/succulents" class="sidebar-subitem">
     <p>Суккуленты</p>
   </a>
-  <a href="/about-author" class="sidebar-item">
-    <img src="/images/sidebar-logo.png" />
-    <p>Об авторе</p>
-  </a>
-  <a href="/about-company" class="sidebar-item">
-    <img src="/images/sidebar-logo.png" />
-    <p>О фирме</p>
-  </a>
+  <div class="sidebar-item-container">
+    <a href="/about-author" class="sidebar-item">
+      <img class="sidebar-item-img" src="/images/sidebar-logo.png" />
+      <p>Об авторе</p>
+    </a>
+    <?php
+
+    if (isset($_SESSION['first_name'])) {
+      echo "<a href='/admin/about-author' class='sidebar-item'><img src='/images/edit.png' class='edit-image' type='text'></img></a>";
+    }
+    ?>
+  </div>
+
+  <div class="sidebar-item-container">
+    <a href="/about-company" class="sidebar-item">
+      <img class="sidebar-item-img" src="/images/sidebar-logo.png" />
+      <p>О фирме</p>
+    </a>
+    <?php
+
+    if (isset($_SESSION['first_name'])) {
+      echo "<a href='/admin/about-company' class='sidebar-item'><img src='/images/edit.png' class='edit-image' type='text'></img></a>";
+    }
+    ?>
+  </div>
 </div>
