@@ -3,10 +3,12 @@
     <img src="/images/logo.png" class="header-logo" />Магазин комнатных растений
   </div>
 
-  <?php session_start();
-  if (isset($_SESSION['first_name'])): ?>
-    <a href='/logout'>Выйти</a>
-  <?php else: ?>
-    <a href='/login'>Войти</a>
-  <?php endif; ?>
+  <button class="basic-button">
+    <?php session_start();
+    if (isset($_SESSION['first_name'])): ?>
+      <a href='/logout'>Выйти</a>
+    <?php else: ?>
+      <a href='/login'>Войти</a>
+    <?php endif; ?>
+  </button>
 </section>

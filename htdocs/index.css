@@ -41,6 +41,9 @@ button,
 select {
   text-transform: none;
 }
+a {
+  text-decoration: none;
+}
 table,
 tr,
 td,
@@ -183,10 +186,7 @@ th {
   width: 40vw;
   border-radius: 10px;
   height: 32px;
-}
-
-.basic-input::placeholder {
-  padding-left: 8px;
+  text-indent: 8px;
 }
 
 .basic-button {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html style="font-size: 16px" lang="ru">
 <?php include 'C:\MAMP\htdocs\components\head.phtml' ?>
-<script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
+<script src="../../ckeditor/ckeditor.js"></script>
 
 <?php
 session_start();

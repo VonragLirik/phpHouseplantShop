@@ -24,8 +24,6 @@
       <?php
       require 'C:\MAMP\htdocs\components\admin_table.php';
       ?>
-
-      <input type="submit" value="Сохранить" class="basic-button">
     </div>
   </section>
 
