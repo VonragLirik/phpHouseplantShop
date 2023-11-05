@@ -10,7 +10,4 @@
     if (!$connection) {
         die("Ошибка подключения: " . mysqli_connect_error());
     }
-
-    // mysqli_close($connection);
-    // echo $success;
-// ?>
+?>
